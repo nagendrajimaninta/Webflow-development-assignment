@@ -1,0 +1,37 @@
+<!-- <ion-content padding> -->
+
+<!-- Close icon in the top right corner -->
+<div *ngIf="expression">
+  <ion-row>
+    <ion-icon name="close" class="close-icon" (click)="closeCard()"></ion-icon>
+  </ion-row>
+  <br>
+  <!--<br> -->
+  <!-- Image below close icon -->
+  <ion-row>
+    <img src="../../../assets/headerLogo.svg" class="image" />
+  </ion-row>
+  <br>
+  <!--<br> -->
+  <!-- Buttons for signing in with various services -->
+  <ion-row>
+    <ion-col>Log In or Sign Up with :</ion-col>
+  </ion-row>
+  <ion-card *ngFor="let item of data">
+    <ion-row>
+      <ion-col><img src="{{item.icon1}}" /></ion-col>
+      <ion-col>{{item.title}}</ion-col>
+      <ion-col>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="{{item.icon2}}" />
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-label class="font1">
+    Introducing MLCode - Your
+    AI Interview Preparation Platform
+  </ion-label><br>
+  <ion-label class="font2">
+    Privacy Policy and Terms of Service apply
+  </ion-label>
+</div>

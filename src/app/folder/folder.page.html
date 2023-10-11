@@ -1,0 +1,58 @@
+<ion-app>
+  <ion-header class="bg-dark">
+
+    <ion-grid>
+      <ion-row justify-content-between>
+        <ion-col class="ml-5">
+          <!-- Left element -->
+          <img src="../../assets/headerLogo.svg" />
+        </ion-col>
+        <ion-col class="ion-text-right">
+          <!-- Right element -->
+          <button type="button" class="btn btn-success" (click)="openDialogFun()" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Sign Up">Sign Up</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-row class="texttop">Introducing MLCode -
+      Your AI Interview Preparation Platform
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="../../../assets/Avatar.png" alt="">
+        <img src="../../../assets/Avatar.png" alt="">
+        <img src="../../../assets/Avatar.png" alt="">
+        <span>3000+ Flaiers currently practicing</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="">
+      <ion-card class="example-card" *ngFor="let item of data" [ngStyle]="item.style">
+        <ion-col size="5">
+          <ion-row>
+            <ion-col>{{item.title}}</ion-col>
+            <ion-col><img src="{{item.icon2}}" class="cardImg" /></ion-col>
+          </ion-row>
+
+        </ion-col>
+      </ion-card>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button (click)="previousPage()" [disabled]="currentPage === 1">Previous</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button (click)="nextPage()" [disabled]="currentPage === getTotalPages()">Next</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+
+  <ion-footer class="bg-dark">
+    This is the footer
+  </ion-footer>
+</ion-app>

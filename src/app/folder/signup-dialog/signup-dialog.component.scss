@@ -1,0 +1,29 @@
+/* folder.page.scss */
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px
+  }
+  
+  .image {
+    width: 219px; 
+    height: 36px;
+  }
+  .font1{
+font-size: 18px;
+  }
+  .font2{
+    font-size: 10px;
+      }
+  .card-content {
+    padding: 20px;
+  }
+  
+  .signin-button {
+    margin-top: 10px;
+  }
+  

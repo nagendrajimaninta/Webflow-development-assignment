@@ -1,10 +1,9 @@
-
 /* img {
   max-width: 25%;
 } */
 
 img.cardImg {
-  
+  max-width: 91%;
 }
 
 .texttop {
@@ -18,10 +17,12 @@ img.cardImg {
   /* 87.769px */
   letter-spacing: 0.399px;
 }
-
+.unique {
+  margin-left: -20px;
+}
 .example-card {
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   flex-shrink: 0;
   border-radius: 15.39px;
 

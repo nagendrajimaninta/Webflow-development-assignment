@@ -24,8 +24,8 @@
     <ion-row>
       <ion-col>
         <img src="../../../assets/Avatar.png" alt="">
-        <img src="../../../assets/Avatar.png" alt="">
-        <img src="../../../assets/Avatar.png" alt="">
+        <img src="../../../assets/Avatar.png" alt="" class="unique">
+        <img src="../../../assets/Avatar.png" alt="" class="unique">
         <span>3000+ Flaiers currently practicing</span>
       </ion-col>
     </ion-row>
@@ -33,7 +33,19 @@
       <ion-card class="example-card" *ngFor="let item of data" [ngStyle]="item.style">
         <ion-col size="5">
           <ion-row>
-            <ion-col>{{item.title}}</ion-col>
+            <ion-col>
+              <ion-label class="text-white" style="white-space: nowrap;">{{item.title}}</ion-label><br>
+              <ion-label *ngFor="let a of item.options">
+                <div *ngIf="a.type==='text'" style="white-space: nowrap;"><mat-icon>done</mat-icon> &nbsp;&nbsp;&nbsp;
+                  {{a.title}}</div>
+                <button *ngIf="a.type==='button'" class="btn btn-secondary">{{a.title}}</button>
+              </ion-label>
+
+
+              <!-- <ion-label>{{a.title}}</ion-label><br> -->
+              <!-- <ion-label>Test</ion-label><br>
+              <ion-label>Test</ion-label><br> -->
+            </ion-col>
             <ion-col><img src="{{item.icon2}}" class="cardImg" /></ion-col>
           </ion-row>
 

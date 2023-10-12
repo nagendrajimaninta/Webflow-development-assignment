@@ -17,43 +17,142 @@ export class FolderPage implements OnInit {
       icon2: "../../../assets/_Group_.svg",
       style: {
         background: "linear-gradient(204deg, #E4658E 10.96%, #4E267C 78.44%)"
-      }
+      },
+      options: [
+        {
+          title: "50 Questions",
+          type: "text"
+        },
+        {
+          title: "200+ Test Cases",
+          type: "text"
+        },
+        {
+          title: "100 learning resources",
+          type: "text"
+        },
+        {
+          title: "500 Hints",
+          type: "text"
+        },
+        {
+          title: "50 Questions",
+          type: "text"
+        }, {
+          title: "Start Practice",
+          type: "button"
+        }
+      ]
     },
     {
       title: "ML Coding Question ",
       icon1: "../../../assets/linkedin 1.svg",
+
       icon2: "../../../assets/_Groupsecond.svg",
       style: {
         background: "linear-gradient(204deg, #89DDE3 10.96%, #00494F 78.44%)"
 
-      }
+      },
+      options: [
+        
+        {
+          title: "50 Questions",
+          type: "text"
+        },
+        {
+          title: "200+ Test Cases",
+          type: "text"
+        },
+        {
+          title: "100 learning resources",
+          type: "text"
+        },
+        {
+          title: "500 Hints",
+          type: "text"
+        },
+        {
+          title: "50 Questions",
+          type: "text"
+        },
+        {
+          title: "Start Practice",
+          type: "button"
+        },
+      ]
     },
     {
       title: "ML Coding Question",
+
       icon1: "../../../assets/github.svg",
       icon2: "../../../assets/_Group_.svg",
       style: {
         background: "linear-gradient(204deg, #E4658E 10.96%, #4E267C 78.44%)"
 
-      }
+      },
+      options: [
+        
+        {
+          title: "50 Questions",
+          type: "text"
+        },
+        {
+          title: "200+ Test Cases",
+          type: "text"
+        },
+        {
+          title: "100 learning resources",
+          type: "text"
+        },
+        {
+          title: "500 Hints",
+          type: "text"
+        },
+        {
+          title: "50 Questions",
+          type: "text"
+        },
+        {
+          title: "Start Practice",
+          type: "button"
+        },
+      ]
     },
     {
       title: "ML System Design",
       icon1: "../../../assets/facebook 1.svg",
+
       icon2: "../../../assets/_Group_.svg",
       style: {
         background: "linear-gradient(204deg, #F9956A 10.96%, #470F0F 78.44%)"
 
-      }
-    },
-    {
-      title: "ML Coding Question",
-      icon1: "../../../assets/github.svg",
-      icon2: "../../../assets/_Group_.svg",
-      style: {
-        background: "linear-gradient(204deg, #E4658E 10.96%, #4E267C 78.44%)"
-
-      }
+      },
+      options: [
+        {
+          title: "50 Questions",
+          type:"text"
+        },
+        {
+          title: "200+ Test Cases",
+          type:"text"
+        },
+        {
+          title: "100 learning resources",
+          type:"text"
+        },
+        {
+          title: "500 Hints",
+          type:"text"
+        },
+        {
+          title: "50 Questions",
+          type:"text"
+        },
+        {
+          title: "Start Practice",
+          type: "button"
+        },
+      ]
     }
   ]
   constructor(public dialog: MatDialog

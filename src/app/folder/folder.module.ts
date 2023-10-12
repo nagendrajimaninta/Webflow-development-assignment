@@ -10,6 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { SignupDialogComponent } from './signup-dialog/signup-dialog.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ReversePipe } from '../reverse.pipe';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { ReversePipe } from '../reverse.pipe';
     MatPaginatorModule,
     FolderPageRoutingModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule 
   ],
   declarations: [FolderPage, SignupDialogComponent],
   exports: [],

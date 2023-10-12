@@ -36,8 +36,8 @@
             <ion-col>
               <ion-label class="text-white" style="white-space: nowrap;">{{item.title}}</ion-label><br>
               <ion-label *ngFor="let a of item.options">
-                <div *ngIf="a.type==='text'" style="white-space: nowrap;"><mat-icon>done</mat-icon> &nbsp;&nbsp;&nbsp;
-                  {{a.title}}</div>
+                <div *ngIf="a.type==='text'" style="white-space: nowrap;">
+                  <img src="../../assets/check.png" />{{a.title}}</div>
                 <button *ngIf="a.type==='button'" class="btn btn-secondary">{{a.title}}</button>
               </ion-label>
 

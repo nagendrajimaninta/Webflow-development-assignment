@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ReversePipe } from './reverse.pipe';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { ReversePipe } from './reverse.pipe';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    MatIconModule,
     HttpClientModule,
     MatPaginatorModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },ReversePipe],
